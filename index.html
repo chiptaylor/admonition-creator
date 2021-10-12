@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Admonition Creator</title>
+</head>
+
+<body>
+    <section id="section-top">
+
+        <div class="container">
+            <nav id="main-nav">
+                <div class="container">
+                    <h1>Admonition Creator</h1>
+                    <ul>
+                        <li class="btn"><a href="https://www.glenmtaylor.com">Glen's Web Site</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+    <section id="section-a" class="builder">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Builder</h2>
+            </div>
+            <div class="admonition-content">
+                <div id="admonition-wrapper" class="admonition-wrapper">
+                    <p class="admonition start start-icon start-color"><span>Start</span></p>
+                </div>
+            </div>
+            <div class="admonition-input">
+                <input id="message-input" class="input-text" placeholder="Enter a message..." type="text">
+            </div>
+            <div class="admonition-icon picker">
+                <div class="picker-title">
+                    <h3>Icon Picker</h3>
+                </div>
+                <div class="picker-icon">
+                    <form id="icon-form">
+                        <fieldset class="icon-fieldset">
+                            <div>
+                                <label for="note" class="radio icon">
+                                    <input id="note" class="radio__input" type="radio" name="icon" value="note">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-pencil-alt"></i>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="summary" class="radio icon">
+                                    <input id="summary" class="radio__input" type="radio" name="icon" value="summary">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-align-left"></i>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="info" class="radio icon">
+                                    <input id="info" class="radio__input" type="radio" name="icon" value="info">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-info-circle"></i>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="tip" class="radio icon">
+                                    <input id="tip" class="radio__input" type="radio" name="icon" value="tip">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-lightbulb"></i>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="success" class="radio icon">
+                                    <input id="success" class="radio__input" type="radio" name="icon" value="success">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-check"></i>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="question" class="radio icon">
+                                    <input id="question" class="radio__input" type="radio" name="icon" value="question">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-question-circle"></i>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="warning" class="radio icon">
+                                    <input id="warning" class="radio__input" type="radio" name="icon" value="warning">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="danger" class="radio icon">
+                                    <input id="danger" class="radio__input" type="radio" name="icon" value="danger">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-bolt"></i>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="bug" class="radio icon">
+                                    <input id="bug" class="radio__input" type="radio" name="icon" value="bug">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-bug"></i>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="fail" class="radio icon">
+                                    <input id="fail" class="radio__input" type="radio" name="icon" value="fail">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-times"></i>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="example" class="radio icon">
+                                    <input id="example" class="radio__input" type="radio" name="icon" value="example">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-list-ol"></i>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="quote" class="radio icon">
+                                    <input id="quote" class="radio__input" type="radio" name="icon" value="quote">
+                                    <div class="radio__radio"></div>
+                                    <i class="fas fa-quote-right"></i>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="admonition-color picker">
+                <div class="picker-title">
+                    <h3>Color Picker</h3>
+                </div>
+                <div class="picker-color">
+                    <form id="color-form">
+                        <fieldset class="color-fieldset">
+                            <div>
+                                <label for="blue" class="radio color">
+                                    <input id="blue" class="radio__input" type="radio" name="color" value="blue">
+                                    <div class="radio__radio"></div>
+                                    <div class="color-name">Blue</div>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="green" class="radio color">
+                                    <input id="green" class="radio__input" type="radio" name="color" value="green">
+                                    <div class="radio__radio"></div>
+                                    <div class="color-name">Green</div>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="orange" class="radio color">
+                                    <input id="orange" class="radio__input" type="radio" name="color" value="orange">
+                                    <div class="radio__radio"></div>
+                                    <div class="color-name">Orange</div>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="red" class="radio color">
+                                    <input id="red" class="radio__input" type="radio" name="color" value="red">
+                                    <div class="radio__radio"></div>
+                                    <dic class="color-name">Red</dic>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="yellow" class="radio color">
+                                    <input id="yellow" class="radio__input" type="radio" name="color" value="yellow">
+                                    <div class="radio__radio"></div>
+                                    <div class="color-name">Yellow</div>
+                                </label>
+
+                            </div>
+                            <div>
+                                <label for="grey" class="radio color">
+                                    <input id="grey" class="radio__input" type="radio" name="color" value="grey">
+                                    <div class="radio__radio"></div>
+                                    <div class="color-name">Grey</div>
+                                </label>
+
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="admonition-effect picker">
+                <div class="picker-title">
+                    <h3>Effect Picker</h3>
+                </div>
+                <div class="picker-effect">
+
+                    <fieldset class="effect-fieldset">
+                        <div>
+                            <label for="shadow" class="switch shadow">
+                                <input id="shadow" class="switch__input" type="checkbox" name="shadow" value="shadow">
+                                <div class="switch__slider"></div>
+
+                                <div class="shadow-name">Shadow</div>
+
+                            </label>
+                        </div>
+                        <div>
+                            <label for="animation" class="switch animation">
+                                <input id="animation" class="switch__input" type="checkbox" name="animation"
+                                    value="animation">
+                                <div class="switch__slider"></div>
+                                <div class="animation-name">Animation</div>
+                            </label>
+                        </div>
+                        <div class="width-name">Width</div>
+                        <div class="range-width">
+                            <input id="width" type="range" min="45" max="" value="" class="range__slider">
+                            <output class="bubble"></output>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-b" class="results">
+        <div class="container">
+            <div id="1" class="section-title">
+                <h2>Results</h2>
+            </div>
+            <div class="button-wrapper"><a href="#1" id="result-button">Get Code Results</a></div>
+            <div class="results-title direction">
+                <div class="result-title">
+                    <h3>Directions</h3>
+                </div>
+                <div class="direction-container">
+                    <pre>
+                           <code id="directions-result-code"> 
+                               
+                            Directions: 
+
+                            1. Be sure to put this CDN link to Font Awesome in the head of your HTML document to ensure the icons will display properly.
+                            
+                            &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/&gt
+                            
+                            2. Copy the HTML result into the body of your HTML document where you want the admonition to appear.
+
+                            3. Copy the CSS result into your HTML page head section within &ltstyle&gt tags or put the CSS into a separate CSS style document and link to it in the head section of the HTML document.
+
+                            4. Finally, if you chose the animation effect, be sure to copy the JavaScript result code and put it between &ltscript&gt tags before the closing body tag 
+                            in your HTML document.  You can also put the JavaScript code in a separate Javascript file and link to it if you choose.
+                           </code>
+                        </pre>
+                </div>
+            </div>
+            <div class="html-result code-result">
+
+                <div class="result-title">
+                    <h3>HTML Result</h3>
+                </div>
+                <div class="result-container">
+                    <pre>
+                            <code id="html-result-code">   
+                            HTML markup results will display here.
+                           </code>
+                        </pre>
+                </div>
+
+            </div>
+            <div class="css-result code-result">
+
+                <div class="result-title">
+                    <h3>CSS Result</h3>
+                </div>
+                <div class="result-container">
+                    <pre>
+                           <code id="css-result-code"> 
+                               
+                            CSS results will display here.
+                            
+                           </code>
+                        </pre>
+                </div>
+
+            </div>
+            <div class="js-result code-result">
+
+                <div class="result-title">
+                    <h3>JavaScript Result</h3>
+                </div>
+                <div class="result-container">
+                    <pre>
+                           <code id="js-result-code"> 
+                               
+                            JavaScript results will display here.
+                            
+                           </code>
+                        </pre>
+                </div>
+
+            </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="copyright">Copyright &copy 2021<a href="https://www.glenmtaylor.com" target="_blank">Glen M.
+                    Taylor</a></div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/glentaylor/" target="_blank"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a href=https://twitter.com/leaderchip target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
